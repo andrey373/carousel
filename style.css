@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding-top: 1px;
+}
+
+.carousel{
+    width: 450px;
+    margin:  70px auto 0;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.slide_wrap{
+    font-size: 0;
+    width: 100%;
+    height: 300px;
+    border: 5px double rgb(100, 78, 49);
+    overflow: hidden;
+}
+
+.inner_slide{
+    display: flex; 
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+
+.item_slide{
+    display: inline-block;
+    min-width: 440px;
+    max-width: 440px;
+    height: 100%;
+    background-color: aqua;
+    line-height: 0;
+}
+
+.item_slide > img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.control{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+}
+
+button{
+    cursor: pointer;
+}
